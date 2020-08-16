@@ -1,0 +1,90 @@
+$font-primary:Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$font-secondary: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$font-size-base:0.875rem;
+
+$orange:#FF5A00;
+$yellow:#FFB800;
+$green:#39912E;
+$text-dark-gray:#212121;
+$text-light-gray:#757575;
+$placeholder-gray:#ADADAD;
+$link-blue:#4885ED;
+$background:#FCFCFC;
+$border-color:#E0E2E4;
+
+
+
+//overide bootstrap
+$default-danger       : #ff3c7e;
+$default-dark         : #313435;
+$default-grey         : #565a5c;
+$default-info         : #0f9aee;
+$default-primary      : #7774e7;
+$default-success      : #37c936;
+$default-text-color   : #72777a;
+$default-warning      : #fc0;
+$default-white        : #fff;
+$input-border:#C4CDD5;
+$input-border-radius:3px !default;
+
+$border-color         : #e6ecf5;
+$collapsed-size       : 70px;
+$header-height        : 65px;
+$offscreen-size       : 280px;
+$side-nav-dark        : #313644;
+$side-nav-dark-border : rgba(120, 130, 140, 0.3);
+$side-nav-dark-font   : #99abb4;
+
+$md-blue-500              : #2196f3;
+
+$grey-100             : #f9fafb;
+$grey-200             : #f2f3f5;
+$grey-300             : #e6eaf0;
+$grey-400             : #d3d9e3;
+$grey-500             : #b9c2d0;
+$grey-600             : #7c8695;
+$grey-700             : #72777a;
+$grey-800             : #565a5c;
+$grey-900             : #313435;
+
+$border-color         : #e6ecf5;
+$collapsed-size       : 70px;
+$header-height        : 65px;
+$offscreen-size       : 280px;
+$side-nav-dark        : #313644;
+$side-nav-dark-border : rgba(120, 130, 140, 0.3);
+$side-nav-dark-font   : #99abb4;
+
+
+// ---------------------------------------------------------
+// @Breakpoints
+// ---------------------------------------------------------
+
+$breakpoint-xl : 1440px;
+$breakpoint-lg : 1200px;
+$breakpoint-md : 992px;
+$breakpoint-sm : 768px;
+$breakpoint-xs : 0;
+
+$breakpoints: (
+  "xl\\+" "screen and (min-width: #{$breakpoint-xl})",
+  "lg\\+" "screen and (min-width: #{$breakpoint-lg})",
+  "md\\+" "screen and (min-width: #{$breakpoint-md})",
+  "sm\\+" "screen and (min-width: #{$breakpoint-sm})",
+  "xs\\+" "screen and (min-width: #{$breakpoint-xs})",
+
+  "xl-" "screen and (max-width: #{$breakpoint-xl - 1px})",
+  "lg-" "screen and (max-width: #{$breakpoint-lg - 1px})",
+  "md-" "screen and (max-width: #{$breakpoint-md - 1px})",
+  "sm-" "screen and (max-width: #{$breakpoint-sm - 1px})",
+
+  "lg" "screen and (min-width: #{$breakpoint-lg - 1px}) and (max-width: #{$breakpoint-xl - 1px})",
+  "md" "screen and (min-width: #{$breakpoint-md - 1px}) and (max-width: #{$breakpoint-lg - 1px})",
+  "sm" "screen and (min-width: #{$breakpoint-sm - 1px}) and (max-width: #{$breakpoint-md - 1px})",
+);
+
+
+
+
+
+ 

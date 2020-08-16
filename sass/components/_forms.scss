@@ -1,0 +1,10 @@
+.form-group{
+    ::-webkit-input-placeholder,:-ms-input-placeholder, ::placeholder {
+        color: $placeholder-gray;
+        font-size: 0.8rem;
+      }
+      label.text-uppercase{
+          font-size: 0.8rem;
+      }
+}
+

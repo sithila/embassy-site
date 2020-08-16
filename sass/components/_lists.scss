@@ -1,0 +1,15 @@
+.list-with-icons{
+    > li{
+        padding-left: 60px;
+        position: relative;
+        .icon.RFQ-icon{
+            position: absolute;
+            left: 10px;
+            top:10px;
+        }
+        border: hidden;
+    }
+    a.gray{
+        color: $text-dark-gray;
+    }
+}

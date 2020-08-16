@@ -1,0 +1,21 @@
+.tag{   
+    border-radius: 15px;
+    font-weight: normal;
+    font-size: 0.7rem;
+    line-height: 8px;
+    padding: 5px 10px;
+    margin: 5px;
+    max-height: 20px;
+    min-width: 100px;
+    &.badge-light{
+        background: $background;
+        border: 1px solid darken($background, 10%);
+        &:hover{
+            background: darken($background, 5%); 
+        }
+    }
+    &:first-child{
+        margin-left: 0px;
+    }
+    
+}

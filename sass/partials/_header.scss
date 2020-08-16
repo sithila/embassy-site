@@ -1,0 +1,49 @@
+// Header style
+
+.header {
+  background-color: $default-white;
+  border-bottom: 1px solid $border-color;
+  display: block;
+  margin-bottom: 0;
+  padding: 0;
+  position: fixed;
+  transition: all 0.2s ease;
+  width: calc(100% - #{$offscreen-size});
+  z-index: 800;
+  .logo-wrapper{
+    color:$default-dark;
+    .logo{
+      display: block;
+      height: 75px;
+      width: auto;
+      &.left-logo{
+        padding-left: 75px;
+        position: relative;
+        img{
+          height: 75px;
+          position: absolute;
+          left: 0px;
+          top:0px;
+        }
+        .site-title{
+          padding-top: 15px;
+          margin: 0px;
+        }
+        .site-desc{
+          margin: 0px;
+          padding: 0px;
+        }
+      }
+      &.right-logo{
+        position: relative;
+        img{
+          height: 75px;
+        }
+      }
+    }
+  }
+  .land-switch{
+    padding-top: 25px;
+  }
+  
+}

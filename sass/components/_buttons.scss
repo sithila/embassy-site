@@ -1,0 +1,22 @@
+.common-btn{   
+    border-radius: 3px;
+    font-weight: normal;
+    font-size: 0.8rem;
+    line-height: 15px;
+    padding: 5px 10px;
+    max-height: 30px;
+    min-width: 120px;
+    &.btn-secondary{
+        background: $orange;
+        border: 1px solid darken($orange, 5%);
+        &:hover{
+            background: darken($orange, 5%); 
+        }
+    }
+    &.big{
+        line-height: 21px;
+        padding: 10px 20px;
+        max-height: 42px;
+    }
+    
+}
