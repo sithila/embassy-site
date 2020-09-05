@@ -26,7 +26,6 @@
           top:0px;
         }
         .site-title{
-          padding-top: 15px;
           margin: 0px;
         }
         .site-desc{
@@ -40,10 +39,19 @@
           height: 75px;
         }
       }
+      .logo-text{
+        height: 75px;
+      }
     }
   }
-  .land-switch{
+  .lang-switch{
     padding-top: 25px;
+    a{
+      color: $text-dark-gray;
+      &.active-link{
+        color: $link-blue;
+      }
+    }
   }
   
 }

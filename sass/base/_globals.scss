@@ -39,6 +39,9 @@ html, html a, body {
   h1{
     font-size: calc(14px + (35 - 25) * ((100vw - 300px) / (1920 - 300)));
   }
+  h2{
+    font-size: calc(12px + (35 - 25) * ((100vw - 300px) / (1920 - 300)));
+  }
   
   p {
     font-family: $font-primary;
@@ -86,5 +89,45 @@ html, html a, body {
   .body-container{
     padding-top: 130px;
   }
+
+  @media screen and (min-width: 1920px) {
+    .container-wrapper {
+        max-width: 1920px;
+    }
+}
+
+  .blue-link{
+    color: $link-blue;
+  }
+  .green-link{
+    color: $green;
+  }
+
+  .link-list{
+    .blue-link{
+      padding-left: 10px;
+      position: relative;
+      padding-right: 10px;
+      &::before{
+        content: "\2022";
+        color: $text-dark-gray;
+        font-size: 20px;
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        left: 0px;
+        top:-6px;
+      }
+
+    }
+    
+  }
+
+  .no-wrap{
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
 
   

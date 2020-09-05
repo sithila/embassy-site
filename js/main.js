@@ -74,20 +74,62 @@
       }, 300);
     });
 
-    $("#owl-demo").owlCarousel({
- 
-      navigation : true, // Show next and prev buttons
- 
+    $("#owl-events").owlCarousel({
+      rtl:false,
+      nav:true,
+      
+      dots : false,
+      loop:true,
       slideSpeed : 300,
-      paginationSpeed : 400,
  
       items : 1, 
       itemsDesktop : false,
       itemsDesktopSmall : false,
       itemsTablet: false,
-      itemsMobile : false
+      itemsMobile : false,
+      animateIn: 'fadeIn',
+      animateOut: 'fadeOut',
+      autoplay:true,
+      autoplayTimeout:5000,
+      autoplayHoverPause:true,
  
   });
+
+  $("#owl-storyslide").owlCarousel({
+ 
+    navigation : true, // Show next and prev buttons
+    loop:true,
+    slideSpeed : 300,
+    paginationSpeed : 400,
+
+    items : 1, 
+    itemsDesktop : false,
+    itemsDesktopSmall : false,
+    itemsTablet: false,
+    itemsMobile : false,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+
+});
+
+  $("#owl-newsslide").owlCarousel({
+ 
+    navigation : true, // Show next and prev buttons
+    loop:true,
+    slideSpeed : 300,
+    paginationSpeed : 400,
+
+    items : 1, 
+    itemsDesktop : false,
+    itemsDesktopSmall : false,
+    itemsTablet: false,
+    itemsMobile : false,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+
+});
 
 })();
 

@@ -14,23 +14,25 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-      <header class="header w-100 shadow-sm">
-        <div class="d-flex flex-column flex-md-row justify-content-between p-3 px-md-4  bg-white border-bottom ">
-          <div class="col-4">
+      <header class="header w-100 shadow-sm ">
+        <div class="d-flex flex-column flex-md-row justify-content-between p-3 px-md-4  bg-white border-bottom container-fluid container-wrapper">
+          <div class="col-12 col-md-4 pl-0">
             <a class="d-block logo-wrapper">
               <span class="logo left-logo">
                 <img src="./img/logo-left.png">
-                <h1 class="site-title">The Embassy of Sri Lanka Japan</h1>
-                <p class="site-disc">Japan , Tokyo</p>
+                <div class="logo-text d-flex align-content-center flex-wrap">
+                <h1 class="site-title no-wrap m-0">The Embassy of Sri Lanka Japan</h1>
+                <p class="site-disc no-wrap m-0">Japan , Tokyo</p>
+              </div>
               </span>
             </a>
           </div>
-          <nav class="my-2 my-md-0 mr-md-3 land-switch">
-            <a class="p-2 text-dark" href="#">Singala</a>
-            <a class="p-2 text-dark" href="#">Eunglish</a>
-            <a class="p-2 text-dark" href="#">Japanese</a>
+          <nav class="my-2 my-md-0 mr-md-3 lang-switch">
+            <a class="p-2 " href="#">සිංහල</a>
+            <a class="p-2  active-link" href="#">English</a>
+            <a class="p-2 " href="#">日本人</a>
           </nav>
-          <div class="col-4">
+          <div class="col-12 col-md-4 pr-0">
             <a class="d-block float-right logo-wrapper">
               <span class="logo right-logo">
               <img src="./img/logo-right.png">
@@ -42,80 +44,330 @@
 </header>
   
   
-  <div class="container-fluid body-container">
+  <div class="container-fluid body-container container-wrapper">
     <div class="row">
-      <div class="col-6 ">
+      <div class="col-12 col-md-6">
 
           <div class="card mb-4 widget">
             <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Top Notices</h4>
+              <h2 class="my-0 widget-title">Top Notices</h2>
             </div>
             <div class="card-body">
-              <p>Duis viverra quis augue sodales faucibus. Suspendisse facilisis sem eu convallis efficitur. Phasellus porta est massa. Phasellus orci turpis, pretium id ullamcorper nec, 
-              </p>
+              <div class="owl-carousel owl-theme" id="owl-storyslide">
+                <div class="item">
+                  <div class="news-item">
+                  <a href="" class="blue-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit…</a>
+                  <p class="m-0">Duis viverra quis augue sodales faucibus. Suspendisse facilisis sem eu convallis efficitur</p>
+                  <a class="green-link" href="">https://www.travelsrilanka.com/</a>
+                </div>
+              </div>
+                <div class="item">
+                  <div class="news-item">
+                    <a href="" class="blue-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit…</a>
+                    <p class="m-0">Duis viverra quis augue sodales faucibus. Suspendisse facilisis sem eu convallis efficitur</p>
+                    <a class="green-link" href="">https://www.travelsrilanka.com/</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="news-item">
+                    <a href="" class="blue-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit…</a>
+                    <p class="m-0">Duis viverra quis augue sodales faucibus. Suspendisse facilisis sem eu convallis efficitur</p>
+                    <a class="green-link" href="">https://www.travelsrilanka.com/</a>
+                  </div>
+                </div>
+            </div>
             </div>
           </div>
           <div class="card mb-4 widget p-0">
             <div class="card-body p-0">
               <div class="w-100">
-              <div class="owl-carousel owl-theme" id="owl-demo">
-                <div class="item"><img src="img/fullimage1.jpg" alt="The Last of us"></div>
-                <div class="item"><img src="img/fullimage2.jpg" alt="GTA V"></div>
-                <div class="item"><img src="img/fullimage3.jpg" alt="Mirror Edge"></div>
+              <div class="owl-carousel owl-theme" id="owl-events">
+                <div class="item">
+                  <img src="img/slider/kandy.png" alt="The Last of us">
+                  <div class="related-info">
+                    <div class="caption">
+                      <h2>See Kandy Esala Perahera.</h2>
+                      <p class="m-0">Duis viverra quis augue sodales faucibus. </p>
+                      <a class="green-link" href="">https://www.travelsrilanka.com/</a>
+                    </div>
+                    <div class="actions">
+                      <a type="button" class="btn btn-light"><i class="fa fa-globe" aria-hidden="true"></i>Visit</a>
+                      <a type="button" class="btn btn-light"><i class="fa fa-bookmark-o" aria-hidden="true"></i>Save</a>
+                      <a type="button" class="btn btn-light"><i class="fa fa-share-alt" aria-hidden="true"></i>Share</a>
+                      <a type="button" class="btn btn-light float-right">More images <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/slider/mannar.png" alt="GTA V">
+                  <div class="related-info">
+                    <div class="caption">
+                      <h2>See Kandy Esala Perahera.</h2>
+                      <p class="m-0">Duis viverra quis augue sodales faucibus. </p>
+                      <a class="green-link" href="">https://www.travelsrilanka.com/</a>
+                    </div>
+                    <div class="actions">
+                      <a type="button" class="btn btn-light"><i class="fa fa-globe" aria-hidden="true"></i>Visit</a>
+                      <a type="button" class="btn btn-light"><i class="fa fa-bookmark-o" aria-hidden="true"></i>Save</a>
+                      <a type="button" class="btn btn-light"><i class="fa fa-share-alt" aria-hidden="true"></i>Share</a>
+                      <a type="button" class="btn btn-light float-right">More images <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/slider/sport.png" alt="Mirror Edge">
+                  <div class="related-info">
+                    <div class="caption">
+                      <h2>See Kandy Esala Perahera.</h2>
+                      <p class="m-0">Duis viverra quis augue sodales faucibus. </p>
+                      <a class="green-link" href="">https://www.travelsrilanka.com/</a>
+                    </div>
+                    <div class="actions">
+                      <a type="button" class="btn btn-light"><i class="fa fa-globe" aria-hidden="true"></i>Visit</a>
+                      <a type="button" class="btn btn-light"><i class="fa fa-bookmark-o" aria-hidden="true"></i>Save</a>
+                      <a type="button" class="btn btn-light"><i class="fa fa-share-alt" aria-hidden="true"></i>Share</a>
+                      <a type="button" class="btn btn-light float-right">More images <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
             </div>
           </div>
           <div class="card mb-4 widget">
             <div class="card-header">
-              <h4 class="my-0 font-weight-normal">News Stories</h4>
+              <h2 class="my-0 widget-title">News Stories</h2>
             </div>
             <div class="card-body">
-              <p>Duis viverra quis augue sodales faucibus. Suspendisse facilisis sem eu convallis efficitur. Phasellus porta est massa. Phasellus orci turpis, pretium id ullamcorper nec, 
-              </p>
+              <div class="owl-carousel owl-theme" id="owl-newsslide">
+                <div class="item">
+                  <div class="row">
+                    <div class="col-4">
+                      <img class="w-100" src="./img/slider/kandy.png">
+                    </div>
+                    <div class="col-8">
+                      <div class="news-item">
+                        <a href="" class="blue-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit…</a>
+                        <p class="m-0">Duis viverra quis augue sodales faucibus. Suspendisse facilisis sem eu convallis efficitur</p>
+                        <a class="green-link" href="">https://www.travelsrilanka.com/</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-4">
+                    <img class="w-100" src="./img/slider/kandy.png">
+                  </div>
+                  <div class="col-8">
+                    <div class="news-item">
+                      <a href="" class="blue-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit…</a>
+                      <p class="m-0">Duis viverra quis augue sodales faucibus. Suspendisse facilisis sem eu convallis efficitur</p>
+                      <a class="green-link" href="">https://www.travelsrilanka.com/</a>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-4">
+                  <img class="w-100" src="./img/slider/kandy.png">
+                </div>
+                <div class="col-8">
+                  <div class="news-item">
+                    <a href="" class="blue-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit…</a>
+                    <p class="m-0">Duis viverra quis augue sodales faucibus. Suspendisse facilisis sem eu convallis efficitur</p>
+                    <a class="green-link" href="">https://www.travelsrilanka.com/</a>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+            </div>
             </div>
           </div>
-          
-        
-
-
       </div>
-      <div class="col-6 ">
+
+
+      <div class="col-12 col-md-6">
         <div class="row">
-          <div class="col-6 col-md">
-            <div class="card widget">
+          <div class="col-12 col-md-6">
+            <div class="card widget mb-4">
               <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Enterprise</h4>
+                <h2 class="my-0 widget-title">Embassy</h2>
               </div>
               <div class="card-body">
-                <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>30 users included</li>
-                  <li>15 GB of storage</li>
-                  <li>Phone and email support</li>
-                  <li>Help center access</li>
-                </ul>
-                <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+                <div class="link-list">
+                  <a href="" class="blue-link">Ambassador</a>
+                  <a href="" class="blue-link">Embassy staff</a>
+                  <a href="" class="blue-link">Embassy holidays</a>
+                  <a href="" class="blue-link">Former Ambassadors</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card widget mb-4">
+              <div class="card-header">
+                <h2 class="my-0 widget-title">Visa for Sri Lanka</h2>
+              </div>
+              <div class="card-body">
+                <div class="link-list">
+                  <a href="" class="blue-link">General Information</a>
+                  <a href="" class="blue-link">Tourist Visa</a>
+                  <a href="" class="blue-link">Business Visa</a>
+                  <a href="" class="blue-link">Diplomatic Visa</a>
+                  <a href="" class="blue-link">Transit Visa</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card widget mb-4">
+              <div class="card-header">
+                <h2 class="my-0 widget-title">Get an appointment for
+                  consular services</h2>
+              </div>
+              <div class="card-body">
+                <div class="link-list">
+                  <a href="" class="blue-link">General Information</a>
+                  <a href="" class="blue-link">Tourist Visa</a>
+                  <a href="" class="blue-link">Business Visa</a>
+                  <a href="" class="blue-link">Diplomatic Visa</a>
+                  <a href="" class="blue-link">Transit Visa</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card widget mb-4">
+              <div class="card-header">
+                <h2 class="my-0 widget-title">Media Releases</h2>
+              </div>
+              <div class="card-body">
+                <div class="link-list">
+                  <a href="" class="blue-link">Embassy </a>
+                  <a href="" class="blue-link">Ministry of Foreign Relations</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card widget mb-4">
+              <div class="card-header">
+                <h2 class="my-0 widget-title">Sri Lankan Community Japan</h2>
+              </div>
+              <div class="card-body">
+                <div class="link-list">
+                  <a href="" class="blue-link">Number of Sri Lankans in Japan
+                    in each prefecture.         </a>
+                  <a href="" class="blue-link">Register</a>
+                  <a href="" class="blue-link">Sri Lankan Temples</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card widget yellow mb-4  w-100">
+              <div class="card-header">
+                <h2 class="my-0 widget-title">Export Product Window </h2>
+              </div>
+              <div class="card-body">
+                <div class="link-list">
+                  <a href="" class="">Embassy - </a>
+                  <a href="" class="">Ministry of Foreign Relations</a>
+                </div>
               </div>
             </div>
 
           </div>
-          <div class="col-6 col-md">
-            <div class="card widget">
-              <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Enterprise</h4>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>30 users included</li>
-                  <li>15 GB of storage</li>
-                  <li>Phone and email support</li>
-                  <li>Help center access</li>
-                </ul>
-                <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+          <div class="col-12 col-md-6">
+            <div class="row m-0">
+            <div class="card widget mb-4 w-100">
+              <img class="card-img-top" src="./img/map-sl.png" alt="Card image cap">
+              <div class="card-body pb-0">
+                <div class="row">
+                  <div class="col p-0">
+                    <h2 class="figure-box m-2 green-link">
+                      <span >Colombo</span>
+                      24C
+                    </h2>
+                  </div>
+                  <div class="col p-0"><a type="button" class="btn btn-light float-right m-2">Visit Sri Lanka <i class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
+                </div>
               </div>
             </div>
+
+            <div class="card widget mb-4 w-100">
+              <div class="card-header">
+                <h2 class="my-0 widget-title">Export Product Window </h2>
+              </div>
+              <div class="card-body">
+                <div class="link-list">
+                  <a href="" class="blue-link">Buy from Sri Lanka </a>
+                  <a href="" class="blue-link">Trade Contacts</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card widget w-100">
+              <img class="card-img-top" src="./img/port-city.png" alt="Card image cap">
+              <div class="card-body pb-0">
+                <div class="row">
+                  <div class="col p-0">
+                    <h2 class="figure-box m-2 green-link">
+                      <span >S&P  SL20</span>
+                      19.40
+                    </h2>
+                  </div>
+                  <div class="col p-0"><a type="button" class="btn btn-light float-right m-2 no-wrap">Doing business in Sri Lanka  </a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row ml-0 mr-0 mt-4">
+            <div class="col-6 col-md pl-0">
+              <div class="card widget mb-4 w-100">
+                <div class="card-body p-0 text-center"><a type="button" class="btn btn-light m-2 ">Downloads </a>
+                  </div>
+                </div>
+
+                <div class="card widget mb-4 w-100 float-right">
+                  <div class="card-body p-0 text-center">
+                    <a type="button" class="btn btn-light m-2 ">Sri Lanka Japan Relations </a>
+                    </div>
+                  </div>
+              </div>
+
+
+            
+            <div class="col-6 col-md pr-0">
+              <div class="card widget mb-4 w-100">
+                <div class="card-body p-0 text-center">
+                  <a type="button" class="btn btn-light  m-2 ">Important links </a>
+                  </div>
+                </div>
+                <div class="card widget mb-4 w-100">
+                  <div class="card-body p-0 text-center">
+                    <a type="button" class="btn btn-light  m-2 ">Government Procurements in Sri Lanka </a>
+                    </div>
+                  </div>
+
+            </div>
+          </div>
+
+          <div class="row ml-0 mr-0 ">
+            <div class="card widget orange mb-4  w-100">
+              <div class="card-header">
+                <h2 class="my-0 widget-title">Export Product Window </h2>
+              </div>
+              <div class="card-body">
+                <div class="link-list">
+                  <a href="" class="">Buy from Sri Lanka </a>
+                  <a href="" class="">Trade Contacts</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
 
           </div>
 
@@ -123,9 +375,18 @@
     </div>
     
   </div>
-  <footer class="footer mt-auto py-3">
-    <div class="container">
-      <span class="text-muted">Copyright © 2019 Embassy of Sri Lanka in Tokyo, Japan</span>
+  <footer class="footer mt-auto pl-0 pr-0">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <span class="text-muted">Copyright © 2019 Embassy of Sri Lanka in Tokyo, Japan</span>
+        </div>
+        <div class="col-12 col-md-6 text-right">
+          <button type="button" class="btn btn-light"><i class="fa fa-facebook"></i></button>
+          <button type="button" class="btn btn-light"><i class="fa fa-twitter"></i></button>
+        </div>
+      </div>
+      
     </div>
   </footer>
   </div>

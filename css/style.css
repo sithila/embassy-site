@@ -15744,8 +15744,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src: url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-solid-900.eot");
-  src: url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-solid-900.woff2") format("woff2"), url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-solid-900.woff") format("woff"), url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-solid-900.ttf") format("truetype"), url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("sass/vendor/fontawesome-free/webfonts/fa-solid-900.eot");
+  src: url("sass/vendor/fontawesome-free/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("sass/vendor/fontawesome-free/webfonts/fa-solid-900.woff2") format("woff2"), url("sass/vendor/fontawesome-free/webfonts/fa-solid-900.woff") format("woff"), url("sass/vendor/fontawesome-free/webfonts/fa-solid-900.ttf") format("truetype"), url("sass/vendor/fontawesome-free/webfonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 .fa,
 .fas {
@@ -15762,8 +15762,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-regular-400.eot");
-  src: url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-regular-400.woff2") format("woff2"), url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-regular-400.woff") format("woff"), url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-regular-400.ttf") format("truetype"), url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+  src: url("sass/vendor/fontawesome-free/webfonts/fa-regular-400.eot");
+  src: url("sass/vendor/fontawesome-free/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("sass/vendor/fontawesome-free/webfonts/fa-regular-400.woff2") format("woff2"), url("sass/vendor/fontawesome-free/webfonts/fa-regular-400.woff") format("woff"), url("sass/vendor/fontawesome-free/webfonts/fa-regular-400.ttf") format("truetype"), url("sass/vendor/fontawesome-free/webfonts/fa-regular-400.svg#fontawesome") format("svg");
 }
 .far {
   font-family: "Font Awesome 5 Free";
@@ -15779,8 +15779,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-brands-400.eot");
-  src: url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-brands-400.woff2") format("woff2"), url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-brands-400.woff") format("woff"), url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-brands-400.ttf") format("truetype"), url("src/assets/sass/vendor/fontawesome-free/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+  src: url("sass/vendor/fontawesome-free/webfonts/fa-brands-400.eot");
+  src: url("sass/vendor/fontawesome-free/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("sass/vendor/fontawesome-free/webfonts/fa-brands-400.woff2") format("woff2"), url("sass/vendor/fontawesome-free/webfonts/fa-brands-400.woff") format("woff"), url("sass/vendor/fontawesome-free/webfonts/fa-brands-400.ttf") format("truetype"), url("sass/vendor/fontawesome-free/webfonts/fa-brands-400.svg#fontawesome") format("svg");
 }
 .fab {
   font-family: "Font Awesome 5 Brands";
@@ -15835,6 +15835,10 @@ h1 {
   font-size: calc(14px + (35 - 25) * ((100vw - 300px) / (1920 - 300)));
 }
 
+h2 {
+  font-size: calc(12px + (35 - 25) * ((100vw - 300px) / (1920 - 300)));
+}
+
 p {
   font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.9;
@@ -15872,6 +15876,41 @@ hr {
 
 .body-container {
   padding-top: 130px;
+}
+
+@media screen and (min-width: 1920px) {
+  .container-wrapper {
+    max-width: 1920px;
+  }
+}
+.blue-link {
+  color: #4885ED;
+}
+
+.green-link {
+  color: #39912E;
+}
+
+.link-list .blue-link {
+  padding-left: 10px;
+  position: relative;
+  padding-right: 10px;
+}
+.link-list .blue-link::before {
+  content: "•";
+  color: #212121;
+  font-size: 20px;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 0px;
+  top: -6px;
+}
+
+.no-wrap {
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /**
@@ -16175,6 +16214,72 @@ hr {
 }
 .form-group label.text-uppercase {
   font-size: 0.8rem;
+}
+
+#owl-events {
+  position: relative;
+}
+#owl-events .owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  z-index: 5;
+}
+#owl-events .owl-nav .owl-prev, #owl-events .owl-nav .owl-next {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 8px;
+  text-align: center;
+  opacity: 1;
+}
+#owl-events .owl-nav .owl-prev span, #owl-events .owl-nav .owl-next span {
+  font-size: 18px;
+  line-height: 18px;
+  color: #4885ED;
+}
+#owl-events .owl-nav .owl-prev {
+  float: left;
+  margin-left: 15px;
+}
+#owl-events .owl-nav .owl-next {
+  float: right;
+  margin-right: 15px;
+}
+#owl-events .item {
+  position: relative;
+}
+#owl-events .item .related-info {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  z-index: 5;
+}
+#owl-events .item .related-info .caption {
+  padding: 15px;
+  width: 100%;
+  color: #fff;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.65) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.65) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.65) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00000000", endColorstr="#a6000000",GradientType=0 );
+  /* IE6-9 */
+}
+#owl-events .item .related-info .caption h2, #owl-events .item .related-info .caption p, #owl-events .item .related-info .caption a {
+  margin: 0px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+#owl-events .item .related-info .actions {
+  padding: 0px 15px;
+  width: 100%;
+  background-color: #fff;
+}
+#owl-events .item .related-info .actions .btn {
+  background-color: transparent;
 }
 
 @font-face {
@@ -17725,7 +17830,6 @@ hr {
   top: 0px;
 }
 .header .logo-wrapper .logo.left-logo .site-title {
-  padding-top: 15px;
   margin: 0px;
 }
 .header .logo-wrapper .logo.left-logo .site-desc {
@@ -17738,15 +17842,22 @@ hr {
 .header .logo-wrapper .logo.right-logo img {
   height: 75px;
 }
-.header .land-switch {
+.header .logo-wrapper .logo .logo-text {
+  height: 75px;
+}
+.header .lang-switch {
   padding-top: 25px;
+}
+.header .lang-switch a {
+  color: #212121;
+}
+.header .lang-switch a.active-link {
+  color: #4885ED;
 }
 
 .footer {
-  background-color: #FCFCFC;
-  border-top: 1px solid #e6ecf5;
+  background-color: #fff;
   padding: 30px;
-  text-align: center;
 }
 .footer .logo {
   height: 50px;
@@ -17769,6 +17880,53 @@ hr {
   background-color: #fff;
   color: #000;
   border: hidden;
+}
+.widget .widget-title {
+  color: #212121;
+}
+.widget .card-body {
+  padding-top: 0px;
+}
+.widget.orange {
+  background-color: #FF5A00;
+}
+.widget.orange .card-header, .widget.orange .card-body {
+  background-color: transparent;
+}
+.widget.orange .card-header .widget-title, .widget.orange .card-body .widget-title {
+  color: #fff;
+}
+.widget.orange .card-header a, .widget.orange .card-body a {
+  color: #fff;
+}
+.widget.yellow {
+  background-color: #FFB800;
+}
+.widget.yellow .card-header, .widget.yellow .card-body {
+  background-color: transparent;
+}
+.widget.yellow .card-header .widget-title, .widget.yellow .card-body .widget-title {
+  color: #fff;
+}
+.widget.yellow .card-header a, .widget.yellow .card-body a {
+  color: #fff;
+}
+
+.figure-box {
+  display: inline-block;
+  min-width: 50px;
+  height: 40px;
+  text-align: center;
+  padding-top: 12px;
+  position: relative;
+}
+.figure-box span {
+  font-size: 10px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  color: #212121;
 }
 
 main.homepage .list-group {
