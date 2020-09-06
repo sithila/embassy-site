@@ -1,6 +1,25 @@
 // Import fonts here
-@import "../vendor/fontawesome-free/scss/fontawesome.scss";
-@import "../vendor/fontawesome-free/scss/solid.scss";
-@import "../vendor/fontawesome-free/scss/regular.scss";
-@import "../vendor/fontawesome-free/scss/brands.scss";
+
+
+@import "../vendor/fontawesome/scss/fontawesome.scss";
+@import "../vendor/fontawesome/scss/solid.scss";
+@import "../vendor/fontawesome/scss/brands.scss";
+
+.user {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-user);
+  }
+}
+
+.twitter {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-twitter);
+  }
+}
 
