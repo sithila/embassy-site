@@ -16201,6 +16201,17 @@ hr {
   color: #4885ED;
 }
 
+.same-height-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.same-height-row .same-height-col {
+  display: flex;
+  flex-direction: column;
+}
+
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -18145,7 +18156,7 @@ hr {
 
 .footer {
   background-color: #fff;
-  padding: 30px;
+  padding: 0px;
 }
 .footer .logo {
   height: 50px;
@@ -18157,6 +18168,20 @@ hr {
 }
 .footer a {
   color: #4885ED;
+}
+.footer .social-icons .btn {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+}
+.footer .social-icons .btn .fa-facebook-square {
+  color: #43619C;
+}
+.footer .social-icons .btn .fa-twitter-square {
+  color: #24A9E6;
+}
+.footer .copyright {
+  padding: 15px 0px;
 }
 
 .widget {

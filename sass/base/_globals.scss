@@ -231,6 +231,18 @@ html, html a, body {
       }
     }
   }
+
+  .same-height-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    .same-height-col  {
+          display: flex;
+          flex-direction: column;
+      }
+  }
+  
   
 
   

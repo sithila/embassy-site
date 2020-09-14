@@ -2,7 +2,7 @@
 
 .footer {
     background-color: $white;
-    padding: 30px;
+    padding: 0px;
     .logo{
         height: 50px;
     }
@@ -14,4 +14,22 @@
     a{
         color: $link-blue;
     }
+    .social-icons{
+        .btn{
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            .fa-facebook-square{
+                color: #43619C;
+            }
+            .fa-twitter-square{
+                color: #24A9E6;
+            }
+        }
+        
+    }
+    .copyright{
+        padding: 15px 0px;
+    }
 }
+
