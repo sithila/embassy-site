@@ -9,7 +9,7 @@ html, html a, body {
   
   body {
     font-family: $font-primary;
-    font-size: 14px;
+    font-size: calc(14px + (35 - 34) * ((100vw - 300px) / (1920 - 300)));
     color: $default-text-color;
     line-height: 1.5;
     letter-spacing: 0.2px;

@@ -15985,7 +15985,7 @@ a {
 
 body {
   font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  font-size: 14px;
+  font-size: calc(14px + (35 - 34) * ((100vw - 300px) / (1920 - 300)));
   color: #72777a;
   line-height: 1.5;
   letter-spacing: 0.2px;
