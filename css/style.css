@@ -16212,6 +16212,10 @@ hr {
   flex-direction: column;
 }
 
+.lighter-background {
+  background-color: #f7f7f7;
+}
+
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
