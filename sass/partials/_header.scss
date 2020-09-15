@@ -16,9 +16,15 @@
       display: block;
       height: 75px;
       width: auto;
+      @media (max-width: 576px) {
+        height: 50px;
+      }
       &.left-logo{
         padding-left: 75px;
         position: relative;
+        @media (max-width: 576px) {
+          padding-left: 50px;
+        }
         img{
           height: 75px;
           position: absolute;
@@ -27,6 +33,10 @@
         }
         .site-title{
           margin: 0px;
+          @media (max-width: 576px) {
+            white-space: normal;
+            font-size: 12px;
+          }
         }
         .site-desc{
           margin: 0px;
@@ -41,6 +51,9 @@
       }
       .logo-text{
         height: 75px;
+        @media (max-width: 576px) {
+          height: 50px;
+        }
       }
     }
   }
@@ -51,6 +64,11 @@
       &.active-link{
         color: $link-blue;
       }
+    }
+  }
+  @media (max-width: 576px) {
+    img {
+      max-height: 50px;
     }
   }
   

@@ -16573,7 +16573,7 @@ hr {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 #owl-events .item .related-info .actions {
-  padding: 0px 15px;
+  padding: 0px;
   width: 100%;
   background-color: #fff;
 }
@@ -18118,9 +18118,19 @@ hr {
   height: 75px;
   width: auto;
 }
+@media (max-width: 576px) {
+  .header .logo-wrapper .logo {
+    height: 50px;
+  }
+}
 .header .logo-wrapper .logo.left-logo {
   padding-left: 75px;
   position: relative;
+}
+@media (max-width: 576px) {
+  .header .logo-wrapper .logo.left-logo {
+    padding-left: 50px;
+  }
 }
 .header .logo-wrapper .logo.left-logo img {
   height: 75px;
@@ -18130,6 +18140,12 @@ hr {
 }
 .header .logo-wrapper .logo.left-logo .site-title {
   margin: 0px;
+}
+@media (max-width: 576px) {
+  .header .logo-wrapper .logo.left-logo .site-title {
+    white-space: normal;
+    font-size: 12px;
+  }
 }
 .header .logo-wrapper .logo.left-logo .site-desc {
   margin: 0px;
@@ -18144,6 +18160,11 @@ hr {
 .header .logo-wrapper .logo .logo-text {
   height: 75px;
 }
+@media (max-width: 576px) {
+  .header .logo-wrapper .logo .logo-text {
+    height: 50px;
+  }
+}
 .header .lang-switch {
   padding-top: 25px;
 }
@@ -18152,6 +18173,11 @@ hr {
 }
 .header .lang-switch a.active-link {
   color: #4885ED;
+}
+@media (max-width: 576px) {
+  .header img {
+    max-height: 50px;
+  }
 }
 
 .footer {
