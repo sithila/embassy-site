@@ -18015,12 +18015,8 @@ hr {
 
 .icon {
   display: inline-block;
-  background-image: url("src/assets/images/icon-sprite.png");
-  width: 30px;
-  height: 30px;
-  background-size: 419px 177px;
-  background-repeat: no-repeat;
-  font-size: 0px;
+  width: 70pxpx;
+  height: 70px;
 }
 .icon.x-small {
   width: 12px;
@@ -18067,19 +18063,40 @@ hr {
 .icon.aol-im:hover {
   background-position: 75% 25%;
 }
+.icon svg {
+  width: 70px;
+}
 
 .list-with-icons > li {
   padding-left: 60px;
   position: relative;
+  height: 60px;
+  max-width: 600px;
+  margin: 10px 0;
+  background-color: transparent;
   border: hidden;
 }
-.list-with-icons > li .icon.RFQ-icon {
+.list-with-icons > li .icon.pdf-icon {
+  display: block;
+  width: 60px;
+  height: 60px;
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 0px;
+  top: 0px;
 }
-.list-with-icons a.gray {
+.list-with-icons > li .icon.pdf-icon svg {
+  width: 60px;
+}
+.list-with-icons > li .text {
+  padding-left: 15px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.list-with-icons a {
   color: #212121;
+  background-color: transparent;
 }
 
 .tag {

@@ -1084,12 +1084,8 @@
 
 .icon {
 	display: inline-block;
-	background-image: url('src/assets/images/icon-sprite.png');
-	width: 30px;
-	height: 30px;
-	background-size: 419px 177px;
-	background-repeat: no-repeat;
-    font-size: 0px;
+	width: 70pxpx;
+	height: 70px;
     &.x-small {
         width: 12px;
         height: 12px;
@@ -1143,6 +1139,9 @@
     
     &.aol-im:hover {
         background-position: 75% 25%;
-    }
+	}
+	svg{
+		width: 70px;
+	}
 }
 

@@ -2,14 +2,35 @@
     > li{
         padding-left: 60px;
         position: relative;
-        .icon.RFQ-icon{
+        height: 60px;
+        max-width: 600px;
+        margin:10px 0 ;
+        background-color: transparent;
+        .icon.pdf-icon{
+            display: block;
+            width: 60px;
+            height: 60px;
             position: absolute;
-            left: 10px;
-            top:10px;
+            left: 0px;
+            top:0px;
+            svg{
+                width: 60px;
+            }
+
+        }
+        .text{
+            
+            padding-left: 15px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+ 
         }
         border: hidden;
     }
-    a.gray{
+    a{
         color: $text-dark-gray;
+        background-color: transparent;
     }
 }
