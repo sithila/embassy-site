@@ -119,7 +119,13 @@ html, html a, body {
         left: 0px;
         top:-6px;
       }
-
+      &.collapse-link{
+        color:$text-light-gray;
+        float: right;
+        &::before{
+          content: "";
+        }
+      }
     }
     
   }

@@ -16096,6 +16096,13 @@ hr {
   left: 0px;
   top: -6px;
 }
+.link-list .blue-link.collapse-link {
+  color: #757575;
+  float: right;
+}
+.link-list .blue-link.collapse-link::before {
+  content: "";
+}
 
 .no-wrap {
   overflow: hidden;
