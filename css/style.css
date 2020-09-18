@@ -18296,6 +18296,34 @@ hr {
   color: #212121;
 }
 
+.col2-widget-wrapper .widget.size-match {
+  min-height: 136px;
+}
+@media screen and (min-width: 1920px) {
+  .col2-widget-wrapper .widget.size-match {
+    min-height: 194px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .col2-widget-wrapper .widget.size-match .link-list .blue-link {
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .col2-widget-wrapper .widget.size-match .widget-title {
+    line-height: 40px;
+  }
+}
+
+.col3-widget-wrapper .widget.size-match {
+  min-height: 53px;
+}
+@media screen and (min-width: 1920px) {
+  .col3-widget-wrapper .widget.size-match {
+    min-height: 111px;
+  }
+}
+
 main.homepage .list-group {
   position: sticky;
   top: 0.75rem;

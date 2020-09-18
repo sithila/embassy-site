@@ -62,3 +62,34 @@
         color: $text-dark-gray;
       }
   }
+
+ 
+    .col2-widget-wrapper{
+        .widget.size-match{
+            min-height: 136px;
+            @media screen and (min-width: 1920px) { 
+            min-height: 194px;
+            }
+            .link-list .blue-link{
+                @media screen and (min-width: 1920px) { 
+                line-height: 30px;
+                }
+            }
+            .widget-title {
+                @media screen and (min-width: 1920px) { 
+                line-height: 40px;
+                }
+            }
+        }
+    }
+    .col3-widget-wrapper{
+        .widget.size-match{
+            min-height: 53px;
+            @media screen and (min-width: 1920px) { 
+            min-height: 111px;
+            }
+        }
+    }
+
+ 
+ 
