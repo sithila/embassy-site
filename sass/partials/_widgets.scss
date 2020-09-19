@@ -43,6 +43,11 @@
             
         }
     }
+    .btn.btn-light{
+        background-color: transparent;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     
   }
 
@@ -66,16 +71,29 @@
  
     .col2-widget-wrapper{
         .widget.size-match{
-            min-height: 136px;
+            min-height: 120px;
+            @media only screen  and (min-width : 1280px) {
+                min-height: 100px;
+                }
+            @media only screen  and (min-width : 1440px) {
+                min-height: 136px;
+                }
             @media screen and (min-width: 1920px) { 
             min-height: 194px;
             }
             .link-list .blue-link{
+                @media only screen  and (min-width : 1440px) {
+                    line-height: 20px;
+                    }
                 @media screen and (min-width: 1920px) { 
                 line-height: 30px;
                 }
             }
             .widget-title {
+                
+                @media only screen  and (min-width : 1440px) {
+                    line-height: 28px;
+                    }
                 @media screen and (min-width: 1920px) { 
                 line-height: 40px;
                 }
@@ -85,9 +103,30 @@
     .col3-widget-wrapper{
         .widget.size-match{
             min-height: 53px;
+            @media only screen  and (min-width : 1280px) {
+                min-height: 89px;
+                }
+                @media only screen  and (min-width : 1440px) {
+                    min-height: inherit;
+                    }
             @media screen and (min-width: 1920px) { 
             min-height: 111px;
             }
+        }
+    }
+
+    .col1-widget-wrapper{
+        .widget.size-match{
+            min-height: inherit;
+            @media only screen  and (min-width : 1280px) {
+                min-height: 244px;
+                }
+                @media only screen  and (min-width : 1440px) {
+                    min-height: inherit;
+                    }
+                @media screen and (min-width: 1920px) { 
+                    min-height: inherit;
+                }
         }
     }
 

@@ -18278,6 +18278,11 @@ hr {
 .widget.yellow .card-header a, .widget.yellow .card-body a {
   color: #fff;
 }
+.widget .btn.btn-light {
+  background-color: transparent;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 .figure-box {
   display: inline-block;
@@ -18297,16 +18302,36 @@ hr {
 }
 
 .col2-widget-wrapper .widget.size-match {
-  min-height: 136px;
+  min-height: 120px;
+}
+@media only screen and (min-width: 1280px) {
+  .col2-widget-wrapper .widget.size-match {
+    min-height: 100px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .col2-widget-wrapper .widget.size-match {
+    min-height: 136px;
+  }
 }
 @media screen and (min-width: 1920px) {
   .col2-widget-wrapper .widget.size-match {
     min-height: 194px;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .col2-widget-wrapper .widget.size-match .link-list .blue-link {
+    line-height: 20px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .col2-widget-wrapper .widget.size-match .link-list .blue-link {
     line-height: 30px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .col2-widget-wrapper .widget.size-match .widget-title {
+    line-height: 28px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -18318,9 +18343,38 @@ hr {
 .col3-widget-wrapper .widget.size-match {
   min-height: 53px;
 }
+@media only screen and (min-width: 1280px) {
+  .col3-widget-wrapper .widget.size-match {
+    min-height: 89px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .col3-widget-wrapper .widget.size-match {
+    min-height: inherit;
+  }
+}
 @media screen and (min-width: 1920px) {
   .col3-widget-wrapper .widget.size-match {
     min-height: 111px;
+  }
+}
+
+.col1-widget-wrapper .widget.size-match {
+  min-height: inherit;
+}
+@media only screen and (min-width: 1280px) {
+  .col1-widget-wrapper .widget.size-match {
+    min-height: 244px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .col1-widget-wrapper .widget.size-match {
+    min-height: inherit;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .col1-widget-wrapper .widget.size-match {
+    min-height: inherit;
   }
 }
 
