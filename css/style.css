@@ -16121,8 +16121,20 @@ hr {
 #wrapper.toggled {
   padding-left: 250px;
 }
+@media only screen and (max-width: 768px) {
+  #wrapper.toggled {
+    padding-left: 0px;
+  }
+}
 #wrapper.toggled #sidebar-wrapper {
   width: 250px;
+}
+@media only screen and (max-width: 768px) {
+  #wrapper.toggled #sidebar-wrapper {
+    width: 100%;
+    margin-left: -100%;
+    background-color: #fff;
+  }
 }
 #wrapper.toggled #page-content-wrapper {
   position: relative;
@@ -16142,6 +16154,13 @@ hr {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+@media only screen and (max-width: 768px) {
+  #sidebar-wrapper {
+    width: 100%;
+    margin-left: 0px;
+    background-color: #fff;
+  }
 }
 
 #page-content-wrapper {
@@ -18223,6 +18242,11 @@ hr {
 .footer a {
   color: #4885ED;
 }
+@media only screen and (max-width: 600px) {
+  .footer .social-icons {
+    text-align: center !important;
+  }
+}
 .footer .social-icons .btn {
   background-color: transparent;
   border: none;
@@ -18282,6 +18306,14 @@ hr {
   background-color: transparent;
   padding-left: 0px;
   padding-right: 0px;
+}
+.widget .btn.btn-light:hover {
+  box-shadow: none;
+  border: 1px solid transparent;
+}
+.widget .btn.btn-light:focus, .widget .btn.btn-light.focus {
+  box-shadow: none;
+  border: 1px solid transparent;
 }
 
 .figure-box {
