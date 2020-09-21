@@ -47,6 +47,8 @@
         background-color: transparent;
         padding-left: 0px;
         padding-right: 0px;
+        box-shadow: none;
+        border: 1px solid transparent;
         &:hover{
             box-shadow: none;
             border: 1px solid transparent;
@@ -54,6 +56,16 @@
         &:focus, &.focus{
             box-shadow: none;
             border: 1px solid transparent;
+        }
+    }
+    &.news{
+        background-color: transparent;
+        box-shadow: none;
+        border:none;
+        .list-with-thumb{
+            li.list-group-item{
+                background: $white;
+            }
         }
     }
     

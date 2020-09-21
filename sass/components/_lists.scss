@@ -34,3 +34,54 @@
         background-color: transparent;
     }
 }
+.list-with-thumb{
+    > li{
+        padding-left: 100px;
+        position: relative;
+        height: 100px;
+        max-width: 600px;
+        margin:10px 0 ;
+        background-color: transparent;
+        .thumb{
+            display: block;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 0px;
+            top:0px;
+            overflow: hidden;
+            img{
+                height: 100px;
+                width: 100px;
+                object-fit: cover;
+            }
+
+        }
+        .text{
+            
+            padding-left: 15px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+ 
+        }
+        border: hidden;
+        >a{
+            display: block;
+            
+
+        }
+        &:hover{
+            box-shadow: 0 1px 10px rgba(0,0,0,0.15);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+    }
+    a{
+        color: $text-dark-gray;
+        background-color: transparent;
+        &:hover{
+            color:$link-blue;
+        }
+    }
+}

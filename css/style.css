@@ -16242,6 +16242,14 @@ hr {
   background-color: #f7f7f7;
 }
 
+.align-bottom-right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 15px;
+  z-index: 20;
+}
+
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -18126,6 +18134,51 @@ hr {
   background-color: transparent;
 }
 
+.list-with-thumb > li {
+  padding-left: 100px;
+  position: relative;
+  height: 100px;
+  max-width: 600px;
+  margin: 10px 0;
+  background-color: transparent;
+  border: hidden;
+}
+.list-with-thumb > li .thumb {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.list-with-thumb > li .thumb img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+.list-with-thumb > li .text {
+  padding-left: 15px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.list-with-thumb > li > a {
+  display: block;
+}
+.list-with-thumb > li:hover {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.list-with-thumb a {
+  color: #212121;
+  background-color: transparent;
+}
+.list-with-thumb a:hover {
+  color: #4885ED;
+}
+
 .tag {
   border-radius: 15px;
   font-weight: normal;
@@ -18307,6 +18360,8 @@ hr {
   background-color: transparent;
   padding-left: 0px;
   padding-right: 0px;
+  box-shadow: none;
+  border: 1px solid transparent;
 }
 .widget .btn.btn-light:hover {
   box-shadow: none;
@@ -18315,6 +18370,14 @@ hr {
 .widget .btn.btn-light:focus, .widget .btn.btn-light.focus {
   box-shadow: none;
   border: 1px solid transparent;
+}
+.widget.news {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+.widget.news .list-with-thumb li.list-group-item {
+  background: #fff;
 }
 
 .figure-box {
@@ -18435,6 +18498,22 @@ main.homepage section .title {
   font-size: 2rem;
   background-color: #dc3545;
   border: 1px solid #000;
+}
+
+.news-container {
+  padding: 15px;
+}
+.news-container .news-img {
+  height: 400px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
