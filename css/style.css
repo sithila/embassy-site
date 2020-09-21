@@ -16608,7 +16608,8 @@ hr {
   background-color: #fff;
 }
 #owl-events .item .related-info .actions .btn {
-  background-color: transparent;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 @font-face {
