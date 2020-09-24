@@ -1,0 +1,25 @@
+// Homepage style
+
+.product-container {
+    
+    padding: 15px;
+    .product-item {
+        position: relative;
+        .product-img{
+            width: 600px;
+        }
+    }
+    .carousel{
+        min-height: 200px;
+        #product-carousel{
+            .owl-item .item {
+                height: 10rem;
+                background: #4DC7A0;
+                padding: 1rem;
+            }
+        }
+    }
+    
+
+    
+}
