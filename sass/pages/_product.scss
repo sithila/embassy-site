@@ -8,6 +8,14 @@
         .product-img{
             width: 600px;
         }
+        .media{
+            @media only screen  and (max-width : 600px) {
+                flex-direction: column-reverse !important;
+                .product-img{
+                    width: 100%;
+                }
+            }
+        }
     }
     .carousel{
         min-height: 200px;
@@ -31,5 +39,7 @@
         &:hover{
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
+       
     }
 }
+

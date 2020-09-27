@@ -20307,6 +20307,14 @@ main.homepage section .title {
 .product-container .product-item .product-img {
   width: 600px;
 }
+@media only screen and (max-width: 600px) {
+  .product-container .product-item .media {
+    flex-direction: column-reverse !important;
+  }
+  .product-container .product-item .media .product-img {
+    width: 100%;
+  }
+}
 .product-container .carousel {
   min-height: 200px;
 }
