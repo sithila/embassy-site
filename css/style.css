@@ -16088,6 +16088,7 @@ hr {
   padding-left: 10px;
   position: relative;
   padding-right: 10px;
+  display: inline-block;
 }
 .link-list .blue-link::before {
   content: "•";
@@ -16098,7 +16099,9 @@ hr {
   height: 5px;
   position: absolute;
   left: 0px;
-  top: -6px;
+  top: 0;
+  bottom: 0;
+  line-height: 1;
 }
 .link-list .blue-link.collapse-link {
   color: #757575;
@@ -20023,6 +20026,7 @@ yx-axis
 }
 .header .logo-wrapper .logo.left-logo .site-title {
   margin: 0px;
+  white-space: normal !important;
 }
 @media (max-width: 576px) {
   .header .logo-wrapper .logo.left-logo .site-title {
@@ -20184,12 +20188,12 @@ yx-axis
 }
 @media only screen and (min-width: 1280px) {
   .col2-widget-wrapper .widget.size-match {
-    min-height: 100px;
+    min-height: 130px;
   }
 }
 @media only screen and (min-width: 1440px) {
   .col2-widget-wrapper .widget.size-match {
-    min-height: 136px;
+    min-height: 151px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -20223,12 +20227,12 @@ yx-axis
 }
 @media only screen and (min-width: 1280px) {
   .col3-widget-wrapper .widget.size-match {
-    min-height: 89px;
+    min-height: 109px;
   }
 }
 @media only screen and (min-width: 1440px) {
   .col3-widget-wrapper .widget.size-match {
-    min-height: inherit;
+    min-height: 97px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -20242,7 +20246,10 @@ yx-axis
 }
 @media only screen and (min-width: 1280px) {
   .col1-widget-wrapper .widget.size-match {
-    min-height: 244px;
+    min-height: 261px;
+  }
+  .col1-widget-wrapper .widget.size-match #owl-storyslide .owl-stage-outer {
+    min-height: 120px;
   }
 }
 @media only screen and (min-width: 1440px) {
