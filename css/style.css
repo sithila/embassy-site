@@ -17931,6 +17931,35 @@ yx-axis
   height: 100px;
 }
 
+.main-nav {
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+}
+.main-nav .navbar-light .nav-item a.nav-link {
+  color: #4885ED;
+}
+.main-nav .navbar-light .nav-item a.nav-link:hover {
+  color: #4885ED;
+}
+.main-nav .navbar-light .nav-item a.nav-link.dropdown-toggle {
+  font-weight: bold;
+}
+.main-nav .dropdown-menu {
+  background-color: #4885ED;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.main-nav .dropdown-menu a {
+  display: inline-block;
+  width: auto;
+  color: #fff;
+}
+.main-nav .dropdown-menu a:hover {
+  background-color: #4885ED;
+  color: #fff;
+}
+
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -19920,9 +19949,10 @@ yx-axis
 }
 
 .list-with-thumb > li {
-  padding-left: 100px;
+  padding-left: 150px;
+  padding-right: 15px;
   position: relative;
-  height: 100px;
+  height: 150px;
   max-width: 600px;
   margin: 10px 0;
   background-color: transparent;
@@ -19930,16 +19960,16 @@ yx-axis
 }
 .list-with-thumb > li .thumb {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   position: absolute;
   left: 0px;
   top: 0px;
   overflow: hidden;
 }
 .list-with-thumb > li .thumb img {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   object-fit: cover;
 }
 .list-with-thumb > li .text {

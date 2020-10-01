@@ -36,23 +36,24 @@
 }
 .list-with-thumb{
     > li{
-        padding-left: 100px;
+        padding-left: 150px;
+        padding-right: 15px;
         position: relative;
-        height: 100px;
+        height: 150px;
         max-width: 600px;
         margin:10px 0 ;
         background-color: transparent;
         .thumb{
             display: block;
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             position: absolute;
             left: 0px;
             top:0px;
             overflow: hidden;
             img{
-                height: 100px;
-                width: 100px;
+                height: 150px;
+                width: 150px;
                 object-fit: cover;
             }
 

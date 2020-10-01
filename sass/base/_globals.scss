@@ -1562,3 +1562,40 @@ yx-axis
     height: 100px;
   }
 }
+
+
+.main-nav {
+    width: 100%;
+    margin: 0px;
+	text-align: center;
+	.navbar-light{
+		.nav-item{
+			a.nav-link {
+			  color: $link-blue;
+			  &:hover{
+				color: $link-blue;
+			  }
+			  &.dropdown-toggle{
+				  font-weight: bold;
+			  }
+			}
+		  }
+	}
+	.dropdown-menu{ 
+		background-color:$link-blue;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+        a{
+			display: inline-block;
+			width: auto;
+			color: $white;
+			&:hover{
+				background-color: $link-blue;
+				color: $white;
+			}
+		} 
+    }
+    
+    
+	
+}
