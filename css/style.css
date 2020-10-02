@@ -20160,6 +20160,18 @@ yx-axis
 .widget.orange .card-header a, .widget.orange .card-body a {
   color: #fff;
 }
+.widget.blue {
+  background-color: #4885ED;
+}
+.widget.blue .card-header, .widget.blue .card-body {
+  background-color: transparent;
+}
+.widget.blue .card-header .widget-title, .widget.blue .card-body .widget-title {
+  color: #fff;
+}
+.widget.blue .card-header a, .widget.blue .card-body a {
+  color: #fff;
+}
 .widget.yellow {
   background-color: #FFB800;
 }

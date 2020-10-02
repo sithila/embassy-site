@@ -29,6 +29,20 @@
             
         }
     }
+    &.blue{
+        background-color:$link-blue;
+        
+        .card-header, .card-body{
+            background-color: transparent;
+            .widget-title{
+                color: $white;
+            }
+            a{
+                color: $white;
+            }
+            
+        }
+    }
     &.yellow{
         background-color:$yellow;
         
