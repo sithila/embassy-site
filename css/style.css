@@ -16032,6 +16032,10 @@ h2.title {
   font-size: calc(14px + (35 - 25) * ((100vw - 300px) / (1920 - 300)));
 }
 
+h2.title-small {
+  font-size: calc(10px + (35 - 25) * ((100vw - 300px) / (1920 - 300)));
+}
+
 p {
   font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.9;
@@ -17958,6 +17962,11 @@ yx-axis
 .main-nav .dropdown-menu a:hover {
   background-color: #4885ED;
   color: #fff;
+}
+
+.card-center-img {
+  max-width: 500px;
+  margin: 0px auto;
 }
 
 /**
