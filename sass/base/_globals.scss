@@ -49,6 +49,11 @@ html, html a, body {
   h2.title-small{
     font-size: calc(10px + (35 - 25) * ((100vw - 300px) / (1920 - 300)));
   }
+  .highlight-heading{
+	  border-left: 4px solid $text-dark-gray;
+	  background-color: $border-color;
+	  padding: 15px;
+  }
   
   p {
     font-family: $font-primary;
