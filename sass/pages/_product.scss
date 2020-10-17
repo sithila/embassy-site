@@ -16,6 +16,13 @@
                 }
             }
         }
+        &.border-bottom{
+            padding-bottom: 30px;
+            &:last-child{
+                border-bottom: none !important;
+            }
+            
+        }
     }
     .carousel{
         min-height: 200px;
@@ -25,6 +32,24 @@
                 background: #4DC7A0;
                 padding: 1rem;
             }
+        }
+    }
+
+    .product-images{
+        background-color: transparent;
+        li{
+            background-color: transparent;
+        }
+        .image{
+            height: 200px;
+            width: 100%;
+            display: block;
+            margin-right: 5px;
+            border: 5px solid $white;
+            background-color: $white;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
     

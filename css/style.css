@@ -20383,6 +20383,12 @@ main.homepage section .title {
     width: 100%;
   }
 }
+.product-container .product-item.border-bottom {
+  padding-bottom: 30px;
+}
+.product-container .product-item.border-bottom:last-child {
+  border-bottom: none !important;
+}
 .product-container .carousel {
   min-height: 200px;
 }
@@ -20390,6 +20396,23 @@ main.homepage section .title {
   height: 10rem;
   background: #4DC7A0;
   padding: 1rem;
+}
+.product-container .product-images {
+  background-color: transparent;
+}
+.product-container .product-images li {
+  background-color: transparent;
+}
+.product-container .product-images .image {
+  height: 200px;
+  width: 100%;
+  display: block;
+  margin-right: 5px;
+  border: 5px solid #fff;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .category-list .media {
